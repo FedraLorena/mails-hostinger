@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* HERO FIJO */
+.hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    /* logo izq / links der */
+    align-items: center;
+    padding: 15px 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+/* CONTENEDOR DERECHO */
+.hero-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* LINKS DE NAVEGACIÓN */
+.box-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.link {
+    text-decoration: none;
+    /* sin subrayado */
+    color: #1a1a1a;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.link i {
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.link:hover {
+    color: #673de6;
+    /* color Hostinger */
+}
+
+/* BANDERA + MI CUENTA */
+.box-language {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-language img {
+    width: 24px;
+    height: auto;
+}
+
+.mi-cuenta {
+    background-color: #673de6;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mi-cuenta:hover {
+    background-color: #502bbd;
+}
+
+/* BODY - separa el contenido para que no quede tapado */
+body {
+    padding-top: 80px;
+    background-color: #fafafa;
+}
